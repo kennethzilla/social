@@ -68,7 +68,9 @@ Database Definition
 ##### Social_media_posts
 **store posts specific person made on social media platforms**
 
-I believe that using polymorphism for both the custom lists and federal legislators table would be a suitable and elegant solution
+To enable federal legislator lists to coexist and exhibit similar behavior to custom lists seamlessly, I propose implementing polymorphism. This approach would eliminate the need for extra code and provide an elegant solution
+
+In addition, I have designed the implementation to be scalable and able to handle various social media platforms in the near future.
 
 #### Conclusion
 
@@ -85,6 +87,8 @@ Overall I'm happy what I've done in this challenge in this 4 hour slot.
 Will be good to have Rubocop gem install to enforce Ruby Style Guide standard to the code.
 
 GUI part - Displaying meaningful messages and User friendly Prompts for the user input. And als will be good to validate user input value.
+
+Due to time constraints, the user authorization (permissions) part has not been implemented yet. If time allows, I plan to add a team roles and permission table for the authorization process
 
 If this wasn't a code challenge exercise. The GUI filter presentation logic can be extract into a separate service class object. This approach would help improve code organisation, promote reusability, and maintain a clearer separation of concerns.
 
