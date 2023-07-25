@@ -88,7 +88,7 @@ Will be good to have Rubocop gem install to enforce Ruby Style Guide standard to
 
 GUI part - Displaying meaningful messages and User friendly Prompts for the user input. And als will be good to validate user input value.
 
-Due to time constraints, the user authorization (permissions) part has not been implemented yet. If time allows, I plan to add a team roles and permission table for the authorization process
+Due to time constraints, the user authorisation (permissions) part has not been implemented yet. If time allows, I plan to add a team roles and permission table for the authorization process.
 
 If this wasn't a code challenge exercise. The GUI filter presentation logic can be extract into a separate service class object. This approach would help improve code organisation, promote reusability, and maintain a clearer separation of concerns.
 
