@@ -50,7 +50,9 @@ Third step, I chose to design the database schema. This step ensures efficient s
      
 #### Database design of the Social Media Challenge
 
-I've taken a top down apporach to break down the problem.
+Here is the DB table diagram I've designed using DB Designer tool
+
+https://dbdesigner.page.link/dPkCYfwMC9dhV7f89
 
 Database Definition
 ##### Team table
@@ -70,7 +72,9 @@ I believe that using polymorphism for both the custom lists and federal legislat
 
 #### Conclusion
 
-After careful consideration, I've choosen test suite with Rspec.
+After careful consideration, I've choosen test suite with Rspec and shoulda-matchers gem for writing clean and neat model specs.
+
+https://github.com/thoughtbot/shoulda-matchers
 
 This is because is something easy to set up and get it running due to this challenge limited time constraint.
 
