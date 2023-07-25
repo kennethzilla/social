@@ -1,0 +1,34 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Social media posts</h1>
+
+<%= form_tag social_media_posts_path, method: :get do %>
+  <label for="start_date">Start Date:</label>
+  <%= date_field_tag :start_date, params[:start_date] %>
+
+  <label for="end_date">End Date:</label>
+  <%= date_field_tag :end_date, params[:end_date] %>
+
+  <label for="social_media_type">Social Media Type:</label>
+  <%= select_tag :social_media_type, options_from_collection_for_select(SocialMediaType.all, :name, :name, params[:social_media_type]), include_blank: true %>
+
+  <label for="custom_list">Custom List:</label>
+  <%= select_tag :custom_list_id, options_from_collection_for_select(CustomList.all, :id, :name, params[:custom_list_id]), include_blank: true %>
+
+  <label for="identifiable_type">Table:</label>
+  <%= select_tag :identifiable_type, options_for_select(['CustomListPerson', 'FederalLegislator'], params[:identifiable_type]), include_blank: true %>
+
+
+  <%= submit_tag "Filter" %>
+<% end %>
+
+<div id="social_media_posts">
+  <% @social_media_posts.each do |social_media_post| %>
+    <%= render social_media_post %>
+    <p>
+      <%= link_to "Show this social media post", social_media_post %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New social media post", new_social_media_post_path %>
